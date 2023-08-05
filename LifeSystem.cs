@@ -39,7 +39,7 @@ public class LifeSystem : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.CompareTag("Ow"))
+        if(collision.gameObject.CompareTag("Ow") or collision.gameObject.CompareTag("Finish"))
         {
             TakeDamage(1);
         }
